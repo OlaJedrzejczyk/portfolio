@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+
+{% block page_title %}
+   AJ My portfolio
+{% endblock %}
+
+{% block content %}
+
+    <nav class="content">
+
+        <div class="text">
+            <h2>Hello, my name is Aleksandra Jedrzejczyk</h2>
+            <h1>A bit about me:</h1>
+            <p>
+                IT is a new big part of my life. <br>
+                Recently I finished a course "Python from scratch" <br>
+                And now I'm looking forward to meet people who are IT entusiasts
+            </p>
+        </div>
+
+        <div class="my_foto">
+            <img src="{% static 'images/foto_ola_1.jpg' %}" alt="Aleksandra Jedrzejczyk">
+        </div>
+    </nav>
+{% endblock %}
+

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'edit_task.css' %}">
+{% endblock %}
+
+{% block page_title %}
+    AJ Edit a task
+{% endblock %}
+
+
+{% block content %}
+    <nav class="edit_task">
+        <h2>Edit task</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title.label_tag }}
+            {{ form.title }} <br><br>
+            {{ form.description.label_tag }}<br>
+            {{ form.description }} <br><br>
+            <div class="buttons_edit">
+                <button type="submit" class="button_save">Save changes</button>&nbsp;
+                <a href="{% url 'task_list' %}" class="button_back">Back to Task List</a>
+            </div>
+        </form>
+    </nav>
+{% endblock %}

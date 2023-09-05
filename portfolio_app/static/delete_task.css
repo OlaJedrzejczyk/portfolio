@@ -1,0 +1,24 @@
+
+.delete_task {
+    margin-left: 30px;
+}
+
+.button_delete1, .button_cancel {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 19px;
+    padding: 2px 15px;
+}
+
+.button_delete1:hover, .button_cancel:hover {
+    background-color: #0056b3;
+}
+
+.button_delete1 {
+    font-size: 20px;
+}

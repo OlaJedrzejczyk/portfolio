@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'resume.css' %}">
+{% endblock %}
+
+{% block page_title %}
+   AJ Resume
+{% endblock %}
+
+{% block content %}
+    <nav class="resume_container">
+        <div class="cv1">
+            <img src="{% static 'pdfs/resume.pdf' %}" alt="Aleksandra Jedrzejczyk resume">
+        </div>
+    </nav>
+{% endblock %}

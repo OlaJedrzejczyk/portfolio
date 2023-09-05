@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lilita+One&display=swap');
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    background: white url("images/blue_background.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 10px;
+    padding: 10px;
+}
+
+.my_foto_small img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_home {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: 5px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;
+}
+
+.login1, login2 {
+    color: black;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.resume a, .my_work a, .contact a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.login1 a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.resume a:hover, .my_work a:hover, .contact a:hover, .login1 a:hover {
+    color: blue;
+}
+
+.button-login,
+.button-register,
+.button-logout {
+  color: black;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.button-name {
+  color: black;
+  font-size: 20px;
+}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'task_list.css' %}">
+{% endblock %}
+
+{% block page_title %}
+  AJ List of tasks
+{% endblock %}
+
+{% block content %}
+  <nav class="task_list_container">
+      <h1 class="task_list">List of tasks</h1>
+      <h2>
+          <a href="{% url 'create_task' %}" class="button">Create a new task</a>
+      </h2>
+      <ul>
+        {% for task in tasks %}
+        <div class="task_list1">
+          <li>{{ task.title }}: {{ task.description }}  &nbsp; &nbsp;
+            <a href="{% url 'edit_task' task.id %}" class="button_edit">Edit task</a>
+            <a href="{% url 'delete_task' task.id %}" class="button_delete">Delete task</a>
+          </li>
+        </div>
+        {% endfor %}
+      </ul>
+  </nav>
+
+
+{% endblock %}

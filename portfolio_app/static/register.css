@@ -1,0 +1,32 @@
+input {
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+    padding: 2px 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    display: block;
+    margin-bottom: -10px;
+    min-width: 300px;
+}

@@ -1,0 +1,32 @@
+
+.task_list_container {
+    margin-left: 50px;
+}
+
+.task_list1 {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.button_edit, .button_delete {
+    background-color: #007bff;
+    padding: 2px 15px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button_edit:hover, .button_delete:hover {
+    background-color: #0056b3;
+}
+
+h2 a {
+    color: black;
+}
+
+h2 a:hover {
+    color: blue;
+}

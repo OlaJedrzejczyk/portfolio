@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'delete_task.css' %}">
+{% endblock %}
+
+{% block page_title %}
+    AJ Delete a task
+{% endblock %}
+
+
+{% block content %}
+    <nav class="delete_task">
+        <h2>Delete task</h2>
+        <p>Are you sure you want to delete the task "{{ task.title }}"?</p>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="buttons_delete">
+                <button class="button_delete1">Delete</button>
+                <a href="{% url 'task_list' %}" class="button_cancel">Cancel</a>
+            </div>
+        </form>
+    </nav>
+
+{% endblock %}

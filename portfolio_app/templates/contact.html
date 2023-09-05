@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+{% endblock %}
+
+{% block page_title %}
+  AJ Contact
+{% endblock %}
+
+{% block content %}
+    <br>
+    <p class="find">You can easily find me on </p>
+    <ul class="list">
+        <li>
+            <a href="https://www.linkedin.com/in/aleksandra-jędrzejczyk-555b90287">Linked</a>
+            <a href="https://www.linkedin.com/in/aleksandra-jędrzejczyk-555b90287" class="logo_linkedin">
+                <img src="{% static 'images/logo_linkedin.png' %}" class="logo_linkedin">
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/OlaJedrzejczyk">GitHub</a>
+            <a href="https://github.com/OlaJedrzejczyk" class="github_logo">
+                <img src="{% static 'images/github_logo.png' %}" class="github_logo">
+            </a>
+        <li>
+            <p>email: olajedrzejczyk16@gmail.com</p>
+        </li>
+    </ul>
+{% endblock %}
