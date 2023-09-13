@@ -97,6 +97,6 @@ class GenreFormView(View):
 
 
 class ResultView(View):
-    def get(self):
+    def get(self, request):
         return redirect('home_final_app')
 

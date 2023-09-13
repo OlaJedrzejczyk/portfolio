@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from django.views import View
 
-from final_app.forms import RegistrationForm
+from portfolio_app.forms import RegistrationForm
 from .models import Task
 from .forms import TaskForm
 
