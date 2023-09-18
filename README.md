@@ -15,6 +15,10 @@ Welcome to my personal portfolio website! The project showcases my skills and pr
 
 
 
+![my_projects](https://user-images.githubusercontent.com/118756898/268636507-1bfdc7ff-4129-4158-85bd-4605c5fcdbd9.PNG)
+
+
+
 
 
 
