@@ -1,2 +1,2 @@
-# portfolio
-My portfolio made in django framework
+# Ola Jedrzejczyk, my portfolio
+## Made in django framework
