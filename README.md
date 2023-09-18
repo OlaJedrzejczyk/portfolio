@@ -9,6 +9,15 @@ Welcome to my personal portfolio website! The project showcases my skills and pr
 - HTML/CSS
 - Github
 
+![header](https://user-images.githubusercontent.com/118756898/268614059-2fbfcf18-0515-452a-8014-b1298c27047a.PNG)
+
+
+
+
+
+
+
+
 ## Installation
 How to run:
 Pull the repo, run in terminal command:
