@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'create_task.css' %}">
+{% endblock %}
+
+{% block page_title %}
+  AJ Create a task
+{% endblock %}
+
+{% block content %}
+  <nav class="create_task">
+      <h2>Create a new task</h2>
+      <form method="post">
+        {% csrf_token %}
+        {{ form.title.label_tag }}
+        {{ form.title }} <br><br>
+        {{ form.description.label_tag }}<br>
+        {{ form.description }} <br>
+          <div class="buttons_create">
+            <button type="submit" class="button_create">Create task</button>&nbsp;
+            <a href="{% url 'task_list' %}" class="button_back_create">Back to task list</a>
+          </div>
+      </form>
+  </nav>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'my_work.css' %}">
+{% endblock %}
+
+{% block page_title %}
+   AJ My Work
+{% endblock %}
+
+{% block content %}
+    <h1 class="my_work1">My projects</h1>
+    <ul>
+        <li class="task_list">
+            <a href="{% url 'task_list' %}">Task list</a>
+            <p>Created a simple list of tasks to do with title and description, option to create a new task, edit and delete it (CRUD)</p>
+        </li>
+        <li class="codewars">
+            <a href="https://www.codewars.com/users/AleksandraJot"> Codewars</a>
+            <p>My practising of coding in Python on codewars.com website</p>
+        </li>
+        <li class="final">
+            <a href="{% url 'home_final_app' %}">Final project - Spotify </a>
+            <p>Project done by a group of 4 students (including me) at the end of the course "Python from scratch"</a</p>
+        </li>
+    </ul>
+{% endblock %}

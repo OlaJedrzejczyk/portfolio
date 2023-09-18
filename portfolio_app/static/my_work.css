@@ -1,0 +1,19 @@
+
+.my_work1 {
+    margin-left: 50px;
+}
+
+.task_list, .codewars, .final {
+    margin-left: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.task_list a, .codewars a, .final a {
+    color: black;
+}
+
+.task_list a:hover, .codewars a:hover, .final a:hover {
+    color: blue;
+}

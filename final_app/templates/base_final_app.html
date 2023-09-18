@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block page_title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'styles_final_app.css' %}">
+  <link rel="stylesheet" href="{% static 'header.css' %}">
+  <link rel="stylesheet" href="{% static 'footer.css' %}">
+  <link rel="stylesheet" href="{% static 'logging.css' %}">
+  {% block css_files %}{% endblock %}
+
+</head>
+<body>
+    <nav class="main-container">
+      <header>
+        <nav class="buttons">
+
+            <div class="my_foto_small">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'images/my_foto.jpg' %}" alt="Aleksandra Jedrzejczyk">
+                </a>
+            </div>
+            <a class="link_home" href="{% url 'home' %}">My Portfolio</a>
+
+            <div class="link-home-container">
+                <a class="link-home" href="{% url 'home_final_app' %}">Podcast Generator</a>
+            </div>
+
+        </nav>
+
+      </header>
+
+      {% block content %}{% endblock %}
+    </nav>
+
+  <footer >
+    <span class="text-light">Authors</span>
+        <a href="https://github.com/t-wojciechowski">
+          @t-wojciechowski
+        </a>
+        <a href="https://github.com/PiotrKaminski21">
+          @PiotrKaminski21
+        </a>
+        <a href="https://github.com/OlaJedrzejczyk">
+          @OlaJedrzejczyk
+        </a>
+        <a href="https://github.com/TomaszDrobnik" class="text-light">
+          @TomaszDrobnik
+        </a>
+        <p>Podcast Generator. © 2023 All Rights Reserved</p>
+  </footer>
+  {% block footer %}{% endblock %}
+
+</body>
+</html>

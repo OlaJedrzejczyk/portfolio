@@ -1,0 +1,10 @@
+
+.resume_container  {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 0 0;
+}
+
+.cv1, .cv2 img {
+    margin-right: 20px;
+}
